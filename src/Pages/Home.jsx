@@ -1,7 +1,7 @@
 export default function Page() {
     return (
         <>
-            a
+            <p className={`text-danger`}>davi</p>
         </>
     )
 }
