@@ -1,3 +1,8 @@
 .header {
     width: 100vw;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo {
+    width: 80px;
 }
