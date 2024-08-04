@@ -1,8 +1,13 @@
 .header {
     width: 100vw;
     font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--grey);
+    color: var(--text-light);
 }
 
 .logo {
     width: 80px;
 }
+
+  
+  

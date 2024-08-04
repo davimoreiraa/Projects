@@ -1,11 +1,17 @@
-/* ------------------  STYLES -------------------*/
+/* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
-/* ------------------  IMGS -------------------*/
+/* ------------------ IMGS -------------------*/
 import assBck from '../../assets/images/assignature_bck.png'
-// import { assWht } from 
+import assWht from '../../assets/images/assignature_wht.png'
+
+/* ------------------ RESOURCES -------------------*/
+import { useState } from 'react'
+
 
 export default function Header() {
+    const [dark, setDark] = useState(true)
+
     return (
         <header className={`${styles.header} p-5`}>
             <div className={`d-flex`}>
@@ -16,6 +22,10 @@ export default function Header() {
                         <li>Sobre mim</li>
                         <li>Principais ferramentas</li>
                     </ul>
+                    <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                    </label>
                 </nav>
             </div>
         </header>

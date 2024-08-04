@@ -9,6 +9,10 @@ export default function Home() {
     return (
         <>
             <Header />
+            <label className={`${styles.switch}`}>
+                <input type="checkbox"  />
+                <span  className={`${styles.slider} ${styles.round} border border-black`}></span>
+            </label>
         </>
     )
 }
