@@ -74,9 +74,11 @@ input:checked + .slider:before {
 }
   
 .dark {
+  color: var(--white);
   background-color: var(--grey);
 }
 
 .light {
+  color: var(--grey);
   background-color: var(--white);
 }
