@@ -5,16 +5,11 @@
     color: var(--text-light);
 }
 
-.logo {
+.wd {
     width: 100%;
 }
 
-.list {
-  width: 100%;
-}
-
 /* TOGGLE */
-
 .switch {
     position: relative;
     display: inline-block;
@@ -58,10 +53,8 @@ input:checked + .slider:before {
   transform: translateX(45px);
 }
   
-  /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
-
 }
   
 .slider.round:before {
@@ -72,7 +65,9 @@ input:checked + .slider:before {
 .dark.round:before {
   background-color: white;
 }
-  
+/* ----------------- */
+
+/* DARK/LIGHT */
 .dark {
   color: var(--white);
   background-color: var(--grey);
@@ -82,3 +77,4 @@ input:checked + .slider:before {
   color: var(--grey);
   background-color: var(--white);
 }
+/* ----------------- */
