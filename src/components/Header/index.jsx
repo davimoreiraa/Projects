@@ -25,9 +25,9 @@ export default function Header() {
                 <div className={`d-flex col-9 col-xl-8 justify-content-around`}>
                     <nav className={`${dark ? styles.dark : styles.light} col-7 d-flex justify-content-between`}>
                         <ul className={`${styles.wd} d-none d-lg-flex m-0 list-unstyled justify-content-between`}>
-                            <li className={`d-flex align-items-center`}><a href='google.com'>Principais projetos</a></li>
-                            <li className={`d-flex align-items-center`}><a href='google.com'>Sobre mim</a></li>
-                            <li className={`d-flex align-items-center`}><a href='google.com'>Principais ferramentas</a></li>
+                            <li className={`d-flex align-items-center`}><a href='google.com' className={`${styles.nav_link}`}>Principais projetos</a></li>
+                            <li className={`d-flex align-items-center`}><a href='google.com' className={`${styles.nav_link}`}>Sobre mim</a></li>
+                            <li className={`d-flex align-items-center`}><a href='google.com' className={`${styles.nav_link}`}>Principais ferramentas</a></li>
                         </ul>
                     </nav>
                     <div className={`d-none d-lg-flex col-2 justify-content-center align-items-center`}>

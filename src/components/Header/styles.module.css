@@ -78,3 +78,22 @@ input:checked + .slider:before {
   background-color: var(--white);
 }
 /* ----------------- */
+
+.nav_link {
+  position: relative;
+}
+
+.nav_link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: pink; /* Cor da linha */
+  left: 0;
+  bottom: -5px; /* Espaçamento entre o texto e a linha */
+  transition: width 0.3s ease;
+}
+
+.nav_link:hover::after {
+  width: 100%;
+}
