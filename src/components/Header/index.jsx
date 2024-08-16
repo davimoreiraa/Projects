@@ -17,7 +17,7 @@ export default function Header() {
     const [dark, setDark] = useState(true)
 
     return (
-        <header className={`${styles.header} ${dark ? '' : styles.light} p-5`}>
+        <header className={`${styles.header} ${dark ? '' : styles.light} p-5 border-bottom border-white`}>
             <div className={`d-flex justify-content-between`}>
                 <div className={`col-4 col-sm-2 col-md-1`}>
                     <img src={dark ? assWht : assBck} alt='logo' className={`${styles.wd}`}/>
