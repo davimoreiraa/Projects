@@ -15,6 +15,7 @@ import { CiMenuBurger } from "react-icons/ci";
 
 export default function Header() {
     const [dark, setDark] = useState(true)
+    const [sidebar, setSidebar] = useState(false)
 
     return (
         <header className={`${styles.header} ${dark ? '' : styles.light} p-5 border-bottom border-white`}>
@@ -39,7 +40,7 @@ export default function Header() {
                         <FaRegMoon className={`ms-1 ${dark ? '' : 'text-black'}`} />
                     </div>
                     <div className={`fs-1 d-flex d-lg-none align-items-center`}>
-                        <CiMenuBurger />
+                       <button ><CiMenuBurger /></button>  
                     </div>
                 </div>
             </div>
