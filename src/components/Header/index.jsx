@@ -39,8 +39,8 @@ export default function Header() {
                         </label>
                         <FaRegMoon className={`ms-1 ${dark ? '' : 'text-black'}`} />
                     </div>
-                    <div className={`fs-1 d-flex d-lg-none align-items-center`}>
-                       <button ><CiMenuBurger /></button>  
+                    <div className={`${styles.dark} fs-1 d-flex d-lg-none align-items-center`}>
+                       <button className={`${styles.dark} ${styles.btn}`}><CiMenuBurger /></button>  
                     </div>
                 </div>
             </div>

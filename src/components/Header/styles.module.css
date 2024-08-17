@@ -97,3 +97,11 @@ input:checked + .slider:before {
 .nav_link:hover::after {
   width: 100%;
 }
+
+.btn_container {
+  background-color: black;
+}
+
+.btn {
+  border: none;
+}
