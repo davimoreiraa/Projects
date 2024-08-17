@@ -8,6 +8,9 @@ import assWht from '../../assets/images/assignature_wht.png'
 /* ------------------ RESOURCES -------------------*/
 import { useState } from 'react'
 
+/* ------------------ COMPONENTS -------------------*/
+import Sidebar from '../Sidebar'
+
 /* ------------------ ICONS -------------------*/
 import { FaRegMoon } from "react-icons/fa6";
 import { FaRegSun } from "react-icons/fa6";
@@ -44,6 +47,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+            <Sidebar />
         </header>
     )
 }
