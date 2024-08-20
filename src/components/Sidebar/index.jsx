@@ -12,8 +12,10 @@ export default function Header() {
     const [sidebar, setSidebar] = useState(false)
 
     return (
-        <div className={`${styles.sidebar} position-absolute top-0 start-0 border-end`}>
-            oi davi
+        <div className={`${styles.sidebar_container} position-absolute top-0 start-0`}>
+            <div className={`${styles.sidebar} position-absolute top-0 start-0 border-end`}>
+                oi davi
+            </div>
         </div>
     )
 }
