@@ -7,15 +7,12 @@ import { useState } from 'react'
 /* ------------------ ICONS -------------------*/
 
 
-export default function Header() {
+export default function Sidebar() {
     const [dark, setDark] = useState(true)
-    const [sidebar, setSidebar] = useState(false)
 
     return (
-        <div className={`${styles.sidebar_container} position-absolute top-0 start-0`}>
-            <div className={`${styles.sidebar} position-absolute top-0 start-0 border-end`}>
-                oi davi
-            </div>
+        <div className={`${styles.sidebar} position-absolute top-0 start-0 border-end`}>
+            oi davi
         </div>
     )
 }
