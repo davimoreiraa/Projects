@@ -20,6 +20,10 @@ export default function Header() {
     const [dark, setDark] = useState(true)
     const [sidebar, setSidebar] = useState(false)
 
+    function closeSideBar() {
+        setSidebar(false)
+    }
+
     return (
         <header className={`${styles.header} ${dark ? '' : styles.light} p-5 border-bottom border-white`}>
             <div className={`d-flex justify-content-between`}>
@@ -47,8 +51,8 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.sidebar_container} ${sidebar ? '' : 'd-none'} position-absolute top-0 start-0`}>
-                <Sidebar/>
+            <div className={`${styles.sidebar_container} ${sidebar ? '' : 'd-none'} position-absolute top-0 start-0`} onClick={() => setSidebar(false)}>
+                <Sidebar closeSideBar={closeSideBar}/>
             </div>
         </header>
     )
