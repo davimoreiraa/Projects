@@ -10,6 +10,9 @@ import assWht from '../../assets/images/assignature_wht.png'
 
 /* ------------------ ICONS -------------------*/
 import { IoMdClose } from "react-icons/io";
+import { IoMdPerson } from "react-icons/io";
+import { RiPagesLine } from "react-icons/ri";
+import { AiFillTool } from "react-icons/ai";
 
 export default function Sidebar(props) {
 
