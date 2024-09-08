@@ -26,9 +26,9 @@ export default function Sidebar(props) {
             </div>
             <nav>
                 <ul className={`list-unstyled`}>
-                    <li className={`col-12`}>Sobre mim</li>
-                    <li className={`col-12`}>Principais projetos</li>
-                    <li className={`col-12`}>Principais ferramentas</li>
+                    <li className={`col-12`}> <IoMdPerson /> Sobre mim</li>
+                    <li className={`col-12`}> <RiPagesLine /> Principais projetos</li>
+                    <li className={`col-12`}> <AiFillTool /> Principais ferramentas</li>
                 </ul>
             </nav>
         </div>
