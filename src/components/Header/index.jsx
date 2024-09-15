@@ -51,7 +51,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.sidebar_container} ${sidebar ? '' : 'd-none'} position-absolute top-0 start-0`}>
+            <div className={`${styles.sidebar_container} position-absolute top-0 start-0`}>
                 <Sidebar dark={dark} closeSideBar={closeSideBar}/>
             </div>
         </header>

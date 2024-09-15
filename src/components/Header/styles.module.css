@@ -88,7 +88,7 @@ input:checked + .slider:before {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: pink; /* Cor da linha */
+  background-color: var(--white); /* Cor da linha */
   left: 0;
   bottom: -5px; /* Espaçamento entre o texto e a linha */
   transition: width 0.3s ease;
@@ -110,4 +110,10 @@ input:checked + .slider:before {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
+}
+
+@media only screen and (min-width: 1400px) {
+  .nav_link {
+    font-size: 17px;
+  }
 }
