@@ -24,8 +24,12 @@ export default function Header() {
         setSidebar(false)
     }
 
+    const changeTheme = () => {
+        setDark(!dark)
+    }
+
     return (
-        <header className={`${styles.header} ${dark ? '' : styles.light} p-5 border-bottom border-white`}>
+        <header className={`${styles.header} ${dark ? '' : styles.light} p-5`}>
             <div className={`d-flex justify-content-between`}>
                 <div className={`col-4 col-sm-2 col-md-1`}>
                     <img src={dark ? assWht : assBck} alt='logo' className={`${styles.wd}`}/>
@@ -52,7 +56,7 @@ export default function Header() {
                 </div>
             </div>
             <div className={`${styles.sidebar_container}`}>
-                <Sidebar dark={dark} closeSideBar={closeSideBar} isUp={sidebar}/>
+                <Sidebar dark={dark} changeTheme={changeTheme} closeSideBar={closeSideBar} isUp={sidebar}/>
             </div>
         </header>
     )
