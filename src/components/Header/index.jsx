@@ -20,9 +20,8 @@ export default function Header() {
     const [dark, setDark] = useState(true)
     const [sidebar, setSidebar] = useState(false)
 
-    function closeSideBar() {
+    const closeSideBar = () => {
         setSidebar(false)
-        console.log('a')
     }
 
     return (

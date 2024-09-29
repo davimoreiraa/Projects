@@ -20,7 +20,7 @@ const [up, setUp] = useState(true)
     return (
         <div className={`${styles.sidebar} ${props.isUp ? styles.up : ''} p-3 position-fixed top-0 border-end`}>
             <div className={`d-flex justify-content-end mb-5`}>
-                <div onClick={() => props.closeSidebar}><IoMdClose className={`fs-1 ${props.dark ? '' : 'text-black'}`}/></div>
+                <div onClick={props.closeSideBar}><IoMdClose className={`fs-1 ${props.dark ? '' : 'text-black'}`}/></div>
             </div>
             <nav>
                 <ul className={`list-unstyled`}>
