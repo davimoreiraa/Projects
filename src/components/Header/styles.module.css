@@ -106,11 +106,11 @@ input:checked + .slider:before {
   border: none;
 }
 
-.sidebar_container {
+/* .sidebar_container {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-}
+} */
 
 @media only screen and (min-width: 1400px) {
   .nav_link {

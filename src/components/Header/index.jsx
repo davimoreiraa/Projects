@@ -22,6 +22,7 @@ export default function Header() {
 
     function closeSideBar() {
         setSidebar(false)
+        console.log('a')
     }
 
     return (
@@ -51,8 +52,8 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.sidebar_container} position-absolute top-0 start-0`}>
-                <Sidebar dark={dark} closeSideBar={closeSideBar}/>
+            <div className={`${styles.sidebar_container}`}>
+                <Sidebar dark={dark} closeSideBar={closeSideBar} isUp={sidebar}/>
             </div>
         </header>
     )

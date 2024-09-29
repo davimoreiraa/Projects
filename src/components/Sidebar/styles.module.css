@@ -1,13 +1,14 @@
 .sidebar {
-    width: 70%;
+    width: 250px;
+    left: 0px;
     background-color: var(--grey);
     height: 100%;
-    animation: 1s;
-    left: -290px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
 }
 
 .up {
-    left: 0px;
+    transform: translateX(0);
 }
 
 .wd {
