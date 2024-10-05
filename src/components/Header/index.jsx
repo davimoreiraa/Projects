@@ -10,10 +10,9 @@ import { useState } from 'react'
 
 /* ------------------ COMPONENTS -------------------*/
 import Sidebar from '../Sidebar'
+import ThemeToggle from '../ThemeToggle'
 
 /* ------------------ ICONS -------------------*/
-import { FaRegMoon } from "react-icons/fa6";
-import { FaRegSun } from "react-icons/fa6";
 import { CiMenuBurger } from "react-icons/ci";
 
 export default function Header() {
@@ -43,12 +42,7 @@ export default function Header() {
                         </ul>
                     </nav>
                     <div className={`d-none d-lg-flex col-2 justify-content-center align-items-center`}>
-                        <FaRegSun className={`me-1 ${dark ? '' : 'text-black'}`}/>
-                        <label className={`${styles.switch}`}>
-                            <input type="checkbox" checked={dark} onChange={e => setDark(e.target.checked)} />
-                            <span className={`${styles.slider} border ${styles.round} ${dark ? 'border-light' : 'border-black'} ${dark ? styles.dark : styles.light}`}></span>
-                        </label>
-                        <FaRegMoon className={`ms-1 ${dark ? '' : 'text-black'}`} />
+                        <ThemeToggle />
                     </div>
                     <div className={`${styles.dark} fs-1 d-flex d-lg-none align-items-center`}>
                        <button className={`${styles.dark} ${styles.btn}`} onClick={() => setSidebar(!sidebar)}><CiMenuBurger /></button>  
