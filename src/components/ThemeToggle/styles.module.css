@@ -23,7 +23,6 @@
   transition: .4s;
 }
   
-/* bolinha */
 .slider:before {
   position: absolute;
   content: "";

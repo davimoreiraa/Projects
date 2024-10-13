@@ -9,9 +9,6 @@
     width: 100%;
 }
 
-
-/* ----------------- */
-
 /* DARK/LIGHT */
 .dark {
   color: var(--white);
@@ -33,9 +30,9 @@
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: var(--white); /* Cor da linha */
+  background-color: var(--white); 
   left: 0;
-  bottom: -5px; /* Espaçamento entre o texto e a linha */
+  bottom: -5px; 
   transition: width 0.3s ease;
 }
 
@@ -57,6 +54,7 @@
   background-color: transparent;
 } */
 
+/* ----------------- MEDIA QUERY ----------------- */
 @media only screen and (min-width: 1400px) {
   .nav_link {
     font-size: 17px;
