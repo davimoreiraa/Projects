@@ -15,6 +15,18 @@
     width: 100%;
 }
 
+/* DARK/LIGHT */
+.dark {
+    color: var(--white);
+    background-color: var(--grey);
+  }
+  
+  .light {
+    color: var(--grey) !important;
+    background-color: var(--white);
+  }
+/* ----------------- */
+
 @media only screen and (min-width: 900px) {
     .sidebar {
         width: 600px;
