@@ -45,7 +45,7 @@ export default function Header() {
                         <ThemeToggle dark={dark} changeTheme={changeTheme}/>
                     </div>
                     <div className={`${styles.dark} fs-1 d-flex d-lg-none align-items-center`}>
-                       <button className={`${styles.dark} ${styles.btn}`} onClick={() => setSidebar(!sidebar)}><CiMenuBurger /></button>  
+                       <button className={`${dark ? styles.dark : styles.light} ${styles.btn}`} onClick={() => setSidebar(!sidebar)}><CiMenuBurger /></button>  
                     </div>
                 </div>
             </div>
