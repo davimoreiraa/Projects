@@ -23,9 +23,10 @@ export default function Sidebar(props) {
             </div>
             <nav>
                 <ul className={`list-unstyled`}>
-                    <li className={`fs-3 mb-4 col-12`}><button className={`bg-transparent border-0 text-light ${props.dark ? '' : styles.light}`}><IoMdPerson /> Sobre mim</button></li>
-                    <li className={`fs-3 mb-4 col-12`}><button className={`bg-transparent border-0 text-light ${props.dark ? '' : styles.light}`}><RiPagesLine /> Principais projetos</button></li>
-                    <li className={`fs-3 mb-4 col-12`}><button className={`bg-transparent border-0 text-light ${props.dark ? '' : styles.light}`}><AiFillTool /> Principais ferramentas</button></li>
+                    <li className={`fs-3 mb-4 col-12`}><button className={`bg-transparent border-0
+                         ${props.dark ? '' : styles.light}`}><IoMdPerson /> Sobre mim</button></li>
+                    <li className={`fs-3 mb-4 col-12`}><button className={`bg-transparent border-0 ${props.dark ? '' : styles.light}`}><RiPagesLine /> Principais projetos</button></li>
+                    <li className={`fs-3 mb-4 col-12`}><button className={`bg-transparent border-0 ${props.dark ? '' : styles.light}`}><AiFillTool /> Principais ferramentas</button></li>
                 </ul>
             </nav>
         </div>
