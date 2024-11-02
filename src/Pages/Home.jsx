@@ -14,6 +14,9 @@ export default function Home() {
     const settings = {
         spaceBetween: 25,
         slidesPerView: 1,
+        pagination: {
+            clickable: true,
+        }, 
     }
 
     const [dark, setDark] = useState(true)
