@@ -1,6 +1,7 @@
 /* ------------------ COMPONENTS -------------------*/
 import Footer from '../components/Header'
 import Header from '../components/Header'
+import Slider from '../components/Slider/Slider'
 
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
@@ -23,6 +24,7 @@ export default function Home() {
                     <div className={`${styles.title_container} d-flex justify-content-center align-items-center`}>
                         <h1 class={`${styles.title}`}>Principais projetos</h1>
                     </div>
+                        <Slider />
                 </section>
             </main>
             
