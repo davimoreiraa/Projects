@@ -20,7 +20,9 @@ export default function Home() {
             <Header dark={dark} changeTheme={changeTheme}/>
             <main className={`${styles.content} ${dark ? styles.dark : styles.light}`}>
                 <section className={`${styles.projects}`}>
-                    <h1>Principais projetos</h1>
+                    <div className={`${styles.title_container} d-flex justify-content-center align-items-center`}>
+                        <h1 class={`${styles.title}`}>Principais projetos</h1>
+                    </div>
                 </section>
             </main>
             

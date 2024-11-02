@@ -1,4 +1,20 @@
+/* DARK/LIGHT */
+.dark {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.light {
+    color: var(--grey);
+    background-color: var(--white);
+}
+/* ----------------- */
+
 .container {
     width: 100%;
     background-color: var(--grey);
+}
+
+.title {
+    padding-top: 5em;
 }
