@@ -22,7 +22,7 @@
   }
   
   .light {
-    color: var(--grey) !important;
+    color: var(--grey);
     background-color: var(--white);
   }
 /* ----------------- */
