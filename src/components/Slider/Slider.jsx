@@ -1,19 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-
+import { Swiper } from 'swiper/react'
 import 'swiper/css'
 
-export default function Slider() {
+export default function Slider({ settings, children }) {
     return (
-        <Swiper>
-            <SwiperSlide>
-                <h1>teste1</h1>
-            </SwiperSlide>
-            <SwiperSlide>
-                <h1>teste2</h1>
-            </SwiperSlide>
-            <SwiperSlide>
-                <h1>teste3</h1>
-            </SwiperSlide>
-        </Swiper>
+        <Swiper {...settings}>{children}</Swiper>
     )
 }

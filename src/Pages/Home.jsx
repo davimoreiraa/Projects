@@ -2,6 +2,7 @@
 import Footer from '../components/Header'
 import Header from '../components/Header'
 import Slider from '../components/Slider/Slider'
+import { SwiperSlide } from 'swiper/react'
 
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
@@ -10,6 +11,11 @@ import styles from './styles.module.css'
 import { useState } from 'react'
 
 export default function Home() {
+    const settings = {
+        spaceBetween: 25,
+        slidesPerView: 1,
+    }
+
     const [dark, setDark] = useState(true)
 
     const changeTheme = () => {
@@ -24,7 +30,17 @@ export default function Home() {
                     <div className={`${styles.title_container} d-flex justify-content-center align-items-center`}>
                         <h1 class={`${styles.title}`}>Principais projetos</h1>
                     </div>
-                        <Slider />
+                        <Slider settings={settings}>
+                            <SwiperSlide>
+                                teste1
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                teste2
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                teste3
+                            </SwiperSlide>
+                        </Slider>
                 </section>
             </main>
             
