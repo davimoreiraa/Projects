@@ -35,13 +35,17 @@ export default function Home() {
                     </div>
                         <Slider settings={settings}>
                             <SwiperSlide>
-                                teste1
+                                <div className={`${styles.card}`}>
+                                    <div className={`${styles.img_container}`}>
+
+                                    </div>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 teste2
                             </SwiperSlide>
                             <SwiperSlide>
-                                teste3
+                                 <h1 className={`${styles.red}`}>teste3</h1>
                             </SwiperSlide>
                         </Slider>
                 </section>
