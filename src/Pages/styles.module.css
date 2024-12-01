@@ -22,3 +22,11 @@
 .red {
     color: red;
 }
+
+.img_container {
+    width: 200px;
+}
+
+.img {
+    object-fit: cover;
+}

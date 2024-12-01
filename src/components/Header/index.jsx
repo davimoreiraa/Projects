@@ -2,8 +2,8 @@
 import styles from './styles.module.css'
 
 /* ------------------ IMGS -------------------*/
-import assBck from '../../assets/images/assignature_bck.png'
-import assWht from '../../assets/images/assignature_wht.png'
+import assBck from '../../assets/images/assignatures/assignature_bck.png'
+import assWht from '../../assets/images/assignatures/assignature_wht.png'
 
 /* ------------------ RESOURCES -------------------*/
 import { useState } from 'react'

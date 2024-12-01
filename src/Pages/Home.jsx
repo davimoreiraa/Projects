@@ -4,6 +4,9 @@ import Header from '../components/Header'
 import Slider from '../components/Slider/Slider'
 import { SwiperSlide } from 'swiper/react'
 
+/* ------------------ IMGS -------------------*/
+import adopet from '../assets/images/cards/adopet.png'
+
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
 
@@ -37,12 +40,17 @@ export default function Home() {
                             <SwiperSlide>
                                 <div className={`${styles.card}`}>
                                     <div className={`${styles.img_container}`}>
-
+                                        
+                                       daaiosvdjaois
+                                        {/* <img className={`${styles.img}`} src={adopet} alt="" /> */}
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 teste2
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                 <h1 className={`${styles.red}`}>teste3</h1>
                             </SwiperSlide>
                             <SwiperSlide>
                                  <h1 className={`${styles.red}`}>teste3</h1>
