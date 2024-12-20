@@ -1,11 +1,10 @@
 /* ------------------ COMPONENTS -------------------*/
 import Footer from '../components/Header'
 import Header from '../components/Header'
-import Slider from '../components/Slider/Slider'
-import { SwiperSlide } from 'swiper/react'
+import Slider from '../components/Slider/index.jsx'
 
 /* ------------------ IMGS -------------------*/
-import adopet from '../assets/images/cards/adopet.png'
+import adopet from '../assets/images/cards/adopet.png' //teste
 
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
@@ -14,13 +13,7 @@ import styles from './styles.module.css'
 import { useState } from 'react'
 
 export default function Home() {
-    const settings = {
-        spaceBetween: 25,
-        slidesPerView: 1,
-        pagination: {
-            clickable: true,
-        }, 
-    }
+   
 
     const [dark, setDark] = useState(true)
 
@@ -36,26 +29,7 @@ export default function Home() {
                     <div className={`${styles.title_container} d-flex justify-content-center align-items-center`}>
                         <h1 class={`${styles.title}`}>Principais projetos</h1>
                     </div>
-                        <Slider settings={settings}>
-                            <SwiperSlide>
-                                <div className={`${styles.card}`}>
-                                    <div className={`${styles.img_container}`}>
-                                        
-                                       daaiosvdjaois
-                                        {/* <img className={`${styles.img}`} src={adopet} alt="" /> */}
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                teste2
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                 <h1 className={`${styles.red}`}>teste3</h1>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                 <h1 className={`${styles.red}`}>teste3</h1>
-                            </SwiperSlide>
-                        </Slider>
+                       <Slider />
                 </section>
             </main>
             
