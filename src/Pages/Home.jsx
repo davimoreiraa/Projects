@@ -4,7 +4,6 @@ import Header from '../components/Header'
 import Slider from '../components/Slider/index.jsx'
 
 /* ------------------ IMGS -------------------*/
-import adopet from '../assets/images/cards/adopet.png' //teste
 
 /* ------------------ STYLES -------------------*/
 import styles from './styles.module.css'
